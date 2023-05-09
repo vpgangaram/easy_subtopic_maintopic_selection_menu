@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8">
+                <form id="my-form">
+                    <fieldset>
+                        <legend>Main Topic</legend>
+                        <div class="mb-3">
+                            <label for="maintopic" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="maintopic" name="maintopic">
+                        </div>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Sub Topic</legend>
+                        <div class="mb-3">
+                            <label for="subtopic" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="subtopic" name="subtopic">
+                        </div>
+                        <div class="mb-3">
+                            <label for="template" class="form-label">Template:</label>
+                            <input type="text" class="form-control" id="template" name="template">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="add-subtopic">Add</button>
+                    </fieldset>
+                
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+            </div>
+            
+            <div class="col-4">
+                <form class="mt-5">
+                    <div class="mb-3">
+                        <label for="maintopic-select" class="form-label">Main topic:</label>
+                        <select class="form-select" id="maintopic-select">
+                            <option value="" selected disabled>Select Main Topic</option>
+                        </select>
+                    </div>
+                </form>
+                
+                <div class="mb-3">
+                    <label for="subtopic-select" class="form-label">Sub topic:</label>
+                    <select class="form-select" id="subtopic-select" disabled>
+                        <option value="" selected disabled>Select a main topic first</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="template-textarea" class="form-label">Template:</label>
+                    <textarea class="form-control" id="template-textarea" disabled></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>    
+</body>
+</html>
